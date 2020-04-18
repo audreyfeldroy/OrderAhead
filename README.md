@@ -13,20 +13,12 @@ to start taking pickup orders with the Square Orders API.
 
 ### Step 1: Set your credentials. 
 
-Create `config.json` and put in two sets of `squareApplicationId` 
-and `squareAccessToken` variables. The first set is for your `sandbox` credentials 
-and the second is for your `production` credentials. 
+This project gets your credentials from environment variables:
 
-https://github.com/square/connect-api-examples/blob/master/connect-examples/v2/node_orders-payments/config.json
+* `SQUARE_APPLICATION_ID`
+* `SQUARE_ACCESS_TOKEN`
 
-Replace the placeholders for `squareApplicationId` `squareAccessToken` with your 
-own production or sandbox credentials. For more help, see our [guide on how to get 
-your credentials](https://developer.squareup.com/docs/orders-api/quick-start/step-1). 
-
-**WARNING**: Remember to use your own credentials only for testing the sample app. 
-If you plan to make a version of this sample app available for your own purposes, 
-use the Square [OAuth API](https://developer.squareup.com/docs/oauth-api/what-it-does) 
-to safely manage access to Square accounts. 
+Set those with your credentials. They'll populate the `config` object in `util/square-connect-client.js`.
 
 ### Step 2: Install dependencies
 
