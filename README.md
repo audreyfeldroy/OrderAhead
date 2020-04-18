@@ -4,7 +4,7 @@ Square app where customers can order ahead to have items ready for pickup.
 
 # Based on Square's Order-Ahead Sample App
 
-This project is written in [NodeJS](https://nodejs.org/en/) be sure to have NodeJS setup in your development environment before proceeding.
+This code originally came from https://github.com/square/connect-api-examples/tree/master/connect-examples/v2/node_orders-payments
 
 Follow the [Order-Ahead Sample App guide](https://developer.squareup.com/docs/orders-api/quick-start/start) 
 to start taking pickup orders with the Square Orders API.
@@ -13,9 +13,11 @@ to start taking pickup orders with the Square Orders API.
 
 ### Step 1: Set your credentials. 
 
-Open `config.json`, you'll see that there are two sets of `squareApplicationId` 
+Create `config.json` and put in two sets of `squareApplicationId` 
 and `squareAccessToken` variables. The first set is for your `sandbox` credentials 
 and the second is for your `production` credentials. 
+
+https://github.com/square/connect-api-examples/blob/master/connect-examples/v2/node_orders-payments/config.json
 
 Replace the placeholders for `squareApplicationId` `squareAccessToken` with your 
 own production or sandbox credentials. For more help, see our [guide on how to get 
