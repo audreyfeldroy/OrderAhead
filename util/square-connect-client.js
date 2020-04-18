@@ -15,13 +15,22 @@ limitations under the License.
 */
 
 const SquareConnect = require("square-connect");
+console.log(process.env.SQUARE_APPLICATION_ID);
+console.log(process.env.SQUARE_ACCESS_TOKEN);
+
 const config = {
   "sandbox": {
     "path": "https://connect.squareupsandbox.com",
     "squareApplicationId": process.env.SQUARE_APPLICATION_ID,
     "squareAccessToken": process.env.SQUARE_ACCESS_TOKEN
+  },
+  "production": {
+    "path": "https://connect.squareup.com",
+    "squareApplicationId": process.env.SQUARE_APPLICATION_ID,
+    "squareAccessToken": process.env.SQUARE_ACCESS_TOKEN
   }
-}
+}[process.env.NODE_ENV]
+
 // Set Square Connect credentials
 const defaultClient = SquareConnect.ApiClient.instance;
 defaultClient.basePath = config.path;

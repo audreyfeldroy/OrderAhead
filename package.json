@@ -20,5 +20,8 @@
     "request": "^2.88.0",
     "serve-favicon": "*",
     "square-connect": "*"
+  },
+  "devDependencies": {
+    "node-env-run": "^3.0.2"
   }
 }

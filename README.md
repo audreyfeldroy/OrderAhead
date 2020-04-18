@@ -18,7 +18,7 @@ This project gets your credentials from environment variables:
 * `SQUARE_APPLICATION_ID`
 * `SQUARE_ACCESS_TOKEN`
 
-Set those with your credentials. They'll populate the `config` object in `util/square-connect-client.js`.
+Set those with your credentials in your .env file. They'll populate the `config` object in `util/square-connect-client.js`.
 
 ### Step 2: Install dependencies
 
